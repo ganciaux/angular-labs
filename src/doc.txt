@@ -1,0 +1,10 @@
+httpParams().set('name','value')
+createUrlTree
+param=toSignal(<observable>) ---> template param()
+Input({required:true}) param:type;
+
+let params=HttpParams();
+params.append('name', value)
+
+form.markAllAsTouched()
+form.controls.email.markAsTouched()

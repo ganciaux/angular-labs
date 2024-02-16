@@ -1,0 +1,4 @@
+<p>Interpolation: {{name}}</p>
+<p>Property binding:</p><button [disabled]="isDisable">Click</button> isDisable={{isDisable}}
+<p>Event binding:</p><button (click)="handleClick($event)">Toggle isDisable</button>
+<p>Two-way binding:</p><input type="text" [(ngModel)]="text" /><p>{{text}}</p>

@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="firstname" />
+<input type="text" [(ngModel)]="lastname" />
+
+<button (click)="message()">Set message:</button>
+<p #myMessage>...sample message...</p>
+<app-life-cycle-data [firstname]="firstname" [lastname]="lastname"></app-life-cycle-data>
