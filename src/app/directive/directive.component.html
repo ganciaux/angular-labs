@@ -1,4 +1,11 @@
 <p>ngClass</p>
-<p [ngClass]="{'text-error': isError}">Une erreur est survenue</p>
+<p (click)="toggleClass()" [ngClass]="{ 'text-error': isError }">
+  Une erreur est survenue {{ isError }}
+</p>
 <p>ngStyle</p>
-<p [ngStyle]="{'color': color}">Mon texte</p>
+<p [ngStyle]="{ color: color }">Mon texte</p>
+
+<p appTextColorSize>Directive text color: (default)</p>
+<p appTextColorSize color="'red'" [size]="10">Directive text color: (input)</p>
+
+<app-host-directive></app-host-directive>
