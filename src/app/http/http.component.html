@@ -1,0 +1,5 @@
+<p>http works!</p>
+
+<div *ngFor="let post of posts$ | async">
+    {{post.id}} <button (click)="deletePost(post.id)">Delete</button><button (click)="getPost(post.id)">Get</button>
+</div>
